@@ -1,0 +1,101 @@
+{
+    "manifest": {
+        "filePurpose": "GameManifest"
+    },
+    "assets": [
+        {
+            "path": "fonts",
+            "type": "font",
+            "files": [
+                "scorefont"
+            ]
+        },
+        {
+            "path": "spines",
+            "type": "spine",
+            "files": [
+                "HTP_MinimalHand",
+                "Dust",
+                "Panda",
+                "Panda_Mesh",
+                "Spring",
+                "Wiatraczek"
+            ]
+        },
+        {
+            "path": "textures",
+            "type": "png",
+            "files": [
+                "BG",
+                "BM_Logo",
+                "Btn_Continue",
+                "Btn_Pause",
+                "Btn_Play",
+                "Btn_SoundOff",
+                "Btn_SoundOn",
+                "Cloud_01",
+                "Cloud_02",
+                "Cloud_03",
+                "Cloud_04",
+                "Cloud_05",
+                "Cloud_06",
+                "Cloud_07",
+                "DebugHelper_1",
+                "GameOverPanel",
+                "GameTitle",
+                "HighscoreBigIcon",
+                "HighscoreIcon",
+                "Murek",
+                "NeedLandscape",
+                "NeedPortrait",
+                "OneTimePlatform_PartLeft",
+                "OneTimePlatform_PartRight",
+                "PasekNieba",
+                "PauseCurtain",
+                "PauseIcon",
+                "Platform_OneTime_01",
+                "Platform_OneTime_02",
+                "Platform_OneTime_03",
+                "Platform_OneTime_04",
+                "Platform_Regular_01",
+                "Platform_Regular_02",
+                "Platform_Regular_03",
+                "Platform_Regular_04",
+                "RotateBG",
+                "ScoreIcon",
+                "ScorePanel",
+                "Spring",
+                "TimerIcon",
+                "TryAgain",
+                "ViewHelper",
+                "Watermelon",
+                "Zarowa",
+                "ZaslonkaFade"
+            ]
+        },
+        {
+            "path": "audio",
+            "type": "audio",
+            "files": [
+                "01_bounce_01_01",
+                "01_bounce_01_02",
+                "02_jump_spring_01",
+                "03_watermelon_03",
+                "04_platform_crack_01",
+                "04_platform_crack_02",
+                "04_platform_crack_03",
+                "05_gameover_02",
+                "GameMusic",
+                "tap",
+                "brickhit"
+            ]
+        },
+        {
+            "path": "txt",
+            "type": "text",
+            "files": [
+                "Levels"
+            ]
+        }
+    ]
+}

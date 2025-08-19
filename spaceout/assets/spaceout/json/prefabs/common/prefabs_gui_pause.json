@@ -1,0 +1,98 @@
+{
+    "pause_overlay": {
+        "virtual_position": {
+            "x": 0,
+            "y": 0
+        },
+        "image": {
+            "texture": "PauseCurtain",
+            "layer": "LAYER_PAUSE_SCREEN_22",
+            "sublayer": 100
+        },
+        "commands": {
+            "Create": [
+                {
+                    "name": "DoVisualResize",
+                    "width": 4096,
+                    "height": 4096
+                },
+                {
+                    "name": "DoTweenAlphaFrom",
+                    "d": 400,
+                    "alpha": 0
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenAlphaTo",
+                    "alpha": 0,
+                    "d": 500
+                }
+            ]
+        }
+    },
+    "pause_icon": {
+        "virtual_position": {
+            "x": 0,
+            "y": -100
+        },
+        "image": {
+            "texture": "PauseIcon",
+            "layer": "LAYER_PAUSE_SCREEN_22",
+            "sublayer": 101
+        },
+        "commands": {
+            "Create": [
+                {
+                    "name": "DoTweenAlphaFrom",
+                    "d": 400,
+                    "alpha": 0
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenAlphaTo",
+                    "alpha": 0,
+                    "d": 500
+                }
+            ]
+        }
+    },
+    "pause_btn_resume": {
+        "virtual_position": {
+            "x": 0,
+            "y": 300
+        },
+        "sprite": {
+            "texture": "Btn_Play",
+            "layer": "LAYER_PAUSE_SCREEN_22",
+            "sublayer": 102
+        },
+        "button": {
+            "logicUp": "Clicked",
+            "visInteractions": "basic",
+            "audio": false
+        },
+        "commands": {
+            "Clicked": [
+                {
+                    "name": "DoUnpause"
+                }
+            ],
+            "Create": [
+                {
+                    "name": "DoTweenAlphaFrom",
+                    "d": 400,
+                    "alpha": 0
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenAlphaTo",
+                    "alpha": 0,
+                    "d": 500
+                }
+            ]
+        }
+    }
+}

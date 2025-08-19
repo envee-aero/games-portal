@@ -1,0 +1,34 @@
+{
+    "fade_overlay": {
+        "virtual_position": {
+            "x": 0,
+            "y": -180
+        },
+        "image": {
+            "texture": "ZaslonkaFade",
+            "layer": "LAYER_PAUSE_SCREEN_22",
+            "sublayer": 100
+        },
+        "commands": {
+            "Create": [
+                {
+                    "name": "DoVisualResize",
+                    "width": 4096,
+                    "height": 4096
+                },
+                {
+                    "name": "DoTweenAlphaFrom",
+                    "d": 400,
+                    "alpha": 0
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenAlphaTo",
+                    "alpha": 0,
+                    "d": 500
+                }
+            ]
+        }
+    }
+}

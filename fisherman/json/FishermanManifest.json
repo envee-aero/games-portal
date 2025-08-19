@@ -1,0 +1,97 @@
+{
+    "manifest": {
+        "filePurpose": "GameManifest"
+    },
+    "assets": [
+        {
+            "path": "fonts",
+            "type": "font",
+            "files": [
+                "scorefont"
+            ]
+        },
+        {
+            "path": "spines",
+            "type": "spine",
+            "files": [
+                "Fish01",
+                "Fish02",
+                "Fish03",
+                "Fish04",
+                "Fish05",
+                "Fish06",
+                "Fisherman",
+                "Heart",
+                "Splash",
+                "HTP_MinimalHand"
+            ]
+        },
+        {
+            "path": "textures",
+            "type": "png",
+            "files": [
+                "BG",
+                "BM_Logo",
+                "Btn_Continue",
+                "Btn_Pause",
+                "Btn_Play",
+                "Btn_SoundOff",
+                "Btn_SoundOn",
+                "DebugHelper_1",
+                "Domeczek",
+                "Domeczek_BG",
+                "Fish_01",
+                "Fish_02",
+                "Fish_03",
+                "Fish_04",
+                "Fish_05",
+                "Fish_06",
+                "Fish_07",
+                "Fish_08",
+                "Fisherman",
+                "GameOverPanel",
+                "GameTitle",
+                "Haczyk",
+                "HighscoreBigIcon",
+                "HighscoreIcon",
+                "LiniaWody",
+                "Linka",
+                "PasekNieba",
+                "NeedLandscape",
+                "NeedPortrait",
+                "PauseCurtain",
+                "PauseIcon",
+                "RotateBG",
+                "ScoreIcon",
+                "ScorePanel",
+                "TimerIcon",
+                "TryAgain",
+                "ViewHelper",
+                "WaterWaves",
+                "Weeds",
+                "Weeds_Top",
+                "WeedsSingle",
+                "Zarowa",
+                "ZaslonkaFade"
+            ]
+        },
+        {
+            "path": "audio",
+            "type": "audio",
+            "files": [
+                "GameMusic",
+                "tap",
+                "lup",
+                "splash",
+                "swift"
+            ]
+        },
+        {
+            "path": "txt",
+            "type": "text",
+            "files": [
+                "Levels"
+            ]
+        }
+    ]
+}

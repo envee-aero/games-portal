@@ -1,0 +1,130 @@
+{
+    "manifest": {
+        "filePurpose": "GameManifest"
+    },
+    "assets": [
+        {
+            "path": "fonts",
+            "type": "font",
+            "files": [
+                "scorefont",
+                "PowerupNumber",
+                "ingameplayscore"
+            ]
+        },
+        {
+            "path": "spines",
+            "type": "spine",
+            "files": [
+                "HTP_MinimalHand"
+            ]
+        },
+        {
+            "path": "textures",
+            "type": "png",
+            "files": [
+                "Arrow_Down",
+                "Arrow_Left",
+                "Arrow_Right",
+                "Arrow_Up",
+                "Obstacle",
+                "BG",
+                "BM_Logo",
+                "Btn_Continue",
+                "Btn_Pause",
+                "Btn_Play",
+                "Btn_Shuffle",
+                "Btn_SoundOff",
+                "Btn_SoundOn",
+                "Btn_Tip",
+                "Cat_0001",
+                "Cat_0002",
+                "Cat_0003",
+                "Cat_0004",
+                "Cat_0005",
+                "Cat_0006",
+                "Cat_0007",
+                "Cat_0008",
+                "Cat_0009",
+                "Cat_0010",
+                "Cat_0011",
+                "Cat_0012",
+                "Cat_0013",
+                "Cat_0014",
+                "Cat_0015",
+                "Cat_0016",
+                "Selected_Cat_0001",
+                "Selected_Cat_0002",
+                "Selected_Cat_0003",
+                "Selected_Cat_0004",
+                "Selected_Cat_0005",
+                "Selected_Cat_0006",
+                "Selected_Cat_0007",
+                "Selected_Cat_0008",
+                "Selected_Cat_0009",
+                "Selected_Cat_0010",
+                "Selected_Cat_0011",
+                "Selected_Cat_0012",
+                "Selected_Cat_0013",
+                "Selected_Cat_0014",
+                "Selected_Cat_0015",
+                "Selected_Cat_0016",
+                "DebugHelper_1",
+                "GameOverPanel",
+                "GameTitle",
+                "HighscoreBigIcon",
+                "HighscoreIcon",
+                "NeedLandscape",
+                "NeedPortrait",
+                "Panel_PowerupNumber",
+                "PauseCurtain",
+                "PauseIcon",
+                "Pion",
+                "Poziom",
+                "Punk",
+                "RotateBG",
+                "ScoreIcon",
+                "ScorePanel",
+                "TimerIcon",
+                "TryAgain",
+                "ViewHelper",
+                "WygluszenieTla",
+                "Zarowa",
+                "HowToPlay",
+                "ZaslonkaFade",
+                "Ramka"
+            ]
+        },
+        {
+            "path": "audio",
+            "type": "audio",
+            "files": [
+                "GameMusic",
+                "tap",
+                "GameOver",
+                "LevelCompleted",
+                "MoveTheCats",
+                "Pair_01",
+                "Pair_02",
+                "SelectCat_01",
+                "SelectCat_02",
+                "SelectCat_03",
+                "SelectCat_04",
+                "SelectCat_05",
+                "SelectCat_06",
+                "SelectCat_07",
+                "SelectCat_08",
+                "SelectCat_09",
+                "SelectCat_10",
+                "SelectCat_11"
+            ]
+        },
+        {
+            "path": "txt",
+            "type": "text",
+            "files": [
+                "Levels"
+            ]
+        }
+    ]
+}

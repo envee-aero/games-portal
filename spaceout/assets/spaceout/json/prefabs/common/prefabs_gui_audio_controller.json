@@ -1,0 +1,74 @@
+{
+    "audio_controller_btn_audio": {
+        "virtual_position": {
+            "x": -5,
+            "y": 5
+        },
+        "sprite": {
+            "texture": "Btn_SoundOn",
+            "layer": "LAYER_GUI_31",
+            "sublayer": 1
+        },
+        "button": {
+            "logicUp": null,
+            "toggle": {
+                "state": "on",
+                "toOffLogic": "ToggleToOffLogic",
+                "toOnLogic": "ToggleToOnLogic",
+                "toOffVisual": "ToggleToOffVisual",
+                "toOnVisual": "ToggleToOnVisual"
+            },
+            "visInteractions": "basic",
+            "audio": false
+        },
+        "alias": {
+            "alias": "audio_controller_btn_audio"
+        },
+        "commands": {
+            "ToggleToOffLogic": [
+                {
+                    "name": "DoMute"
+                }
+            ],
+            "ToggleToOnLogic": [
+                {
+                    "name": "DoUnmute"
+                }
+            ],
+            "ToggleToOffVisual": [
+                {
+                    "name": "DoPlayAnimation",
+                    "anim": "Btn_SoundOff"
+                }
+            ],
+            "ToggleToOnVisual": [
+                {
+                    "name": "DoPlayAnimation",
+                    "anim": "Btn_SoundOn"
+                }
+            ],
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "x": 250,
+                    "d": 250,
+                    "delay": 180
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "y": 300,
+                    "d": 450
+                }
+            ],
+            "Create": [
+                {
+                    "name": "DoVisualMoveHalfSize",
+                    "dirX": -1,
+                    "dirY": 1
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+
+Spring.png
+size: 41,45
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Spring
+  rotate: false
+  xy: 2, 2
+  size: 37, 41
+  orig: 37, 45
+  offset: 0, 2
+  index: -1

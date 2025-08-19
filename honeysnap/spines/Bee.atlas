@@ -1,0 +1,41 @@
+
+Bee.png
+size: 156,62
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Back
+  rotate: true
+  xy: 92, 15
+  size: 45, 40
+  orig: 45, 40
+  offset: 0, 0
+  index: -1
+Front
+  rotate: false
+  xy: 51, 10
+  size: 39, 50
+  orig: 39, 50
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 2
+  size: 47, 58
+  orig: 47, 58
+  offset: 0, 0
+  index: -1
+Wing1
+  rotate: true
+  xy: 134, 36
+  size: 24, 20
+  orig: 24, 20
+  offset: 0, 0
+  index: -1
+Wing2
+  rotate: false
+  xy: 134, 6
+  size: 17, 28
+  orig: 17, 28
+  offset: 0, 0
+  index: -1

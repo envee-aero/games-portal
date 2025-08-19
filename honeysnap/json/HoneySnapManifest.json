@@ -1,0 +1,80 @@
+{
+    "manifest": {
+        "filePurpose": "GameManifest"
+    },
+    "assets": [
+        {
+            "path": "fonts",
+            "type": "font",
+            "files": [
+                "scorefont",
+                "ingameplayscore"
+            ]
+        },
+        {
+            "path": "spines",
+            "type": "spine",
+            "files": [
+                "HTP_MinimalHand",
+                "Bee",
+                "HoneyGlut_1",
+                "HoneyGlut_2",
+                "HoneyGlut_3"
+            ]
+        },
+        {
+            "path": "textures",
+            "type": "png",
+            "files": [
+                "BG",
+                "BM_Logo",
+                "Btn_Continue",
+                "Btn_Pause",
+                "Btn_Play",
+                "Btn_SoundOff",
+                "Btn_SoundOn",
+                "DebugHelper_1",
+                "GameOverPanel",
+                "GameTitle",
+                "HexBackground",
+                "HighscoreBigIcon",
+                "HighscoreIcon",
+                "HoneyHex",
+                "NeedLandscape",
+                "NeedPortrait",
+                "PauseCurtain",
+                "PauseIcon",
+                "RotateBG",
+                "ScoreIcon",
+                "ScorePanel",
+                "TimerIcon",
+                "TreeTop",
+                "TryAgain",
+                "ViewHelper",
+                "Zarowa",
+                "ZaslonkaFade",
+                "Pasek",
+                "HoneySnap_FullHDBG"
+            ]
+        },
+        {
+            "path": "audio",
+            "type": "audio",
+            "files": [
+                "GameMusic",
+                "tap",
+                "Pick_01",
+                "Pick_02",
+                "Place_03",
+                "Pick_03"
+            ]
+        },
+        {
+            "path": "txt",
+            "type": "text",
+            "files": [
+                "Levels"
+            ]
+        }
+    ]
+}

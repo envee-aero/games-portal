@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Caveman Grru</title>
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+	<meta name="description" content="Caveman Grru" />
+    <style>body{margin:0;padding:0;background:#914A99;}</style>
+	<script src="src/phaser-arcade-physics.2.2.2.min.js"></script>
+	<script src="src/grru.min.js"></script>
+</head>
+<body>
+<script>
+(function(){
+	var game = new Phaser.Game(960, 640, Phaser.CANVAS);
+	game.state.add('Boot', C.Boot);
+	game.state.add('Preloader', C.Preloader);
+	game.state.add('MainMenu', C.MainMenu);
+	game.state.add('StoryHowto', C.StoryHowto);
+	game.state.add('Game', C.Game);
+	game.state.start('Boot');
+})();
+</script>
+</body>
+</html>

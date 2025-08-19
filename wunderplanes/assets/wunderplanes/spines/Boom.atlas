@@ -1,0 +1,48 @@
+
+Boom.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Elements/Boom_0001
+  rotate: false
+  xy: 2, 2
+  size: 191, 234
+  orig: 191, 234
+  offset: 0, 0
+  index: -1
+Elements/Boom_0002
+  rotate: false
+  xy: 195, 2
+  size: 191, 234
+  orig: 191, 234
+  offset: 0, 0
+  index: -1
+Elements/Boom_0003
+  rotate: false
+  xy: 388, 2
+  size: 191, 234
+  orig: 191, 234
+  offset: 0, 0
+  index: -1
+Elements/Boom_0004
+  rotate: false
+  xy: 581, 2
+  size: 191, 234
+  orig: 191, 234
+  offset: 0, 0
+  index: -1
+Elements/Boom_0005
+  rotate: false
+  xy: 774, 2
+  size: 191, 234
+  orig: 191, 234
+  offset: 0, 0
+  index: -1
+Elements/Boom_0006
+  rotate: false
+  xy: 967, 2
+  size: 191, 234
+  orig: 191, 234
+  offset: 0, 0
+  index: -1

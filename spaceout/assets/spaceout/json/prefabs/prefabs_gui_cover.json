@@ -1,0 +1,204 @@
+{
+    "cover_blackmoon_logo": {
+        "virtual_position": {
+            "x": -85,
+            "y": 6
+        },
+        "image": {
+            "texture": "BM_Logo",
+            "layer": "LAYER_GUI_31",
+            "sublayer": 1
+        },
+        "commands": {
+            "Create": [
+                {
+                    "name": "DoVisualMoveHalfSize",
+                    "dirX": -1,
+                    "dirY": 1
+                }
+            ],
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "y": -300,
+                    "d": 800
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "y": -300,
+                    "d": 800
+                }
+            ]
+        }
+    },
+    "cover_title": {
+        "virtual_position": {
+            "x": 0,
+            "y": 350
+        },
+        "image": {
+            "texture": "GameTitle",
+            "layer": "LAYER_GUI_21",
+            "sublayer": 1,
+            "scale": 0.92
+        },
+        "commands": {
+            "Create": [
+                {
+                    "name": "DoVisualMoveHalfSize",
+                    "dirX": 0,
+                    "dirY": 0
+                }
+            ],
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "y": -1000,
+                    "d": 800,
+                    "delay": 100,
+                    "onCompleteCommand": "TweenedIn"
+                }
+            ],
+            "TweenedIn": [
+                {
+                    "name": "DoTweenPositionYoYo",
+                    "d": 1000,
+                    "delay": 100
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "y": -1000,
+                    "d": 500
+                }
+            ]
+        }
+    },
+    "cover_score_panel": {
+        "virtual_position": {
+            "x": 0,
+            "y": 0
+        },
+        "image": {
+            "texture": "ScorePanel",
+            "layer": "LAYER_GUI_11",
+            "sublayer": 2
+        },
+        "commands": {
+            "Create": [
+                {
+                    "name": "DoVisualMoveHalfSize",
+                    "dirX": 1,
+                    "dirY": 1
+                }
+            ],
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "y": -350,
+                    "d": 400,
+                    "delay": 30
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "y": -600,
+                    "d": 450
+                }
+            ]
+        },
+        "system_pin": {
+            "list": [
+                {
+                    "prefab": "cover_score_text",
+                    "x": -100,
+                    "y": -29
+                },
+                {
+                    "prefab": "cover_score_icon",
+                    "x": -135,
+                    "y": 0
+                }
+            ]
+        }
+    },
+    "cover_score_text": {
+        "virtual_position": {
+            "x": 0,
+            "y": 0
+        },
+        "alias": {
+            "alias": "cover_score_text"
+        },
+        "bitmap_text": {
+            "texture": "scorefont",
+            "layer": "LAYER_GUI_11",
+            "text": "000000",
+            "sublayer": 2,
+            "scale": 0.98
+        },
+        "commands": {}
+    },
+    "cover_score_icon": {
+        "virtual_position": {
+            "x": 0,
+            "y": 0
+        },
+        "image": {
+            "texture": "HighscoreIcon",
+            "layer": "LAYER_GUI_11",
+            "sublayer": 2,
+            "scale": 0.7
+        },
+        "commands": {}
+    },
+    "cover_btn_play": {
+        "virtual_position": {
+            "x": 0,
+            "y": 800
+        },
+        "sprite": {
+            "texture": "Btn_Play",
+            "layer": "LAYER_GUI_21",
+            "sublayer": 1
+        },
+        "button": {
+            "logicUp": "Clicked",
+            "visInteractions": "basic",
+            "audio": false
+        },
+        "commands": {
+            "Clicked": [
+                {
+                    "name": "DoStartGameplay"
+                }
+            ],
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "y": 500,
+                    "d": 400,
+                    "delay": 180
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "y": 600,
+                    "d": 450
+                }
+            ],
+            "Create": [
+                {
+                    "name": "DoVisualMoveHalfSize",
+                    "dirX": 0,
+                    "dirY": -1
+                }
+            ]
+        }
+    }
+}

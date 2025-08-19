@@ -1,0 +1,62 @@
+
+Fish02.png
+size: 125,75
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Fin1
+  rotate: false
+  xy: 64, 3
+  size: 28, 21
+  orig: 28, 21
+  offset: 0, 0
+  index: -1
+Fin2
+  rotate: true
+  xy: 113, 59
+  size: 14, 10
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+Fin3
+  rotate: true
+  xy: 113, 42
+  size: 15, 8
+  orig: 15, 8
+  offset: 0, 0
+  index: -1
+Fin4
+  rotate: false
+  xy: 94, 5
+  size: 23, 19
+  orig: 23, 19
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 2
+  size: 28, 23
+  orig: 28, 23
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: true
+  xy: 32, 4
+  size: 21, 30
+  orig: 21, 30
+  offset: 0, 0
+  index: -1
+Torso1
+  rotate: false
+  xy: 2, 27
+  size: 65, 46
+  orig: 65, 46
+  offset: 0, 0
+  index: -1
+Torso2
+  rotate: false
+  xy: 69, 26
+  size: 42, 47
+  orig: 42, 47
+  offset: 0, 0
+  index: -1

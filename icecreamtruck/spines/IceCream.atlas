@@ -1,0 +1,104 @@
+
+IceCream.png
+size: 126,386
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Empty
+  rotate: false
+  xy: 122, 383
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+KulkaLodow1
+  rotate: true
+  xy: 72, 231
+  size: 68, 52
+  orig: 68, 54
+  offset: 0, 1
+  index: -1
+KulkaLodow10
+  rotate: false
+  xy: 2, 273
+  size: 68, 54
+  orig: 68, 54
+  offset: 0, 0
+  index: -1
+KulkaLodow2
+  rotate: false
+  xy: 2, 218
+  size: 68, 53
+  orig: 68, 54
+  offset: 0, 0
+  index: -1
+KulkaLodow3
+  rotate: false
+  xy: 2, 163
+  size: 68, 53
+  orig: 68, 54
+  offset: 0, 0
+  index: -1
+KulkaLodow4
+  rotate: true
+  xy: 72, 163
+  size: 66, 52
+  orig: 68, 54
+  offset: 1, 1
+  index: -1
+KulkaLodow5
+  rotate: false
+  xy: 2, 110
+  size: 66, 51
+  orig: 68, 54
+  offset: 1, 1
+  index: -1
+KulkaLodow6
+  rotate: true
+  xy: 70, 95
+  size: 66, 51
+  orig: 68, 54
+  offset: 1, 1
+  index: -1
+KulkaLodow7
+  rotate: true
+  xy: 70, 31
+  size: 62, 53
+  orig: 68, 54
+  offset: 3, 0
+  index: -1
+KulkaLodow8
+  rotate: false
+  xy: 2, 57
+  size: 66, 51
+  orig: 68, 54
+  offset: 1, 1
+  index: -1
+KulkaLodow9
+  rotate: false
+  xy: 2, 2
+  size: 62, 53
+  orig: 68, 54
+  offset: 3, 0
+  index: -1
+Podstawka
+  rotate: true
+  xy: 76, 301
+  size: 83, 44
+  orig: 83, 44
+  offset: 0, 0
+  index: -1
+WafelekPrzod
+  rotate: true
+  xy: 2, 329
+  size: 55, 72
+  orig: 55, 72
+  offset: 0, 0
+  index: -1
+WafelekTyl
+  rotate: false
+  xy: 66, 15
+  size: 55, 14
+  orig: 55, 14
+  offset: 0, 0
+  index: -1

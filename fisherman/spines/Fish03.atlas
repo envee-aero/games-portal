@@ -1,0 +1,69 @@
+
+Fish03.png
+size: 147,72
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Back
+  rotate: false
+  xy: 55, 31
+  size: 63, 39
+  orig: 63, 39
+  offset: 0, 0
+  index: -1
+Fin_Bottom
+  rotate: false
+  xy: 88, 12
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+Fin_BottomBack
+  rotate: true
+  xy: 107, 11
+  size: 18, 11
+  orig: 18, 11
+  offset: 0, 0
+  index: -1
+Fin_Over
+  rotate: false
+  xy: 120, 7
+  size: 19, 9
+  orig: 19, 9
+  offset: 0, 0
+  index: -1
+Fin_Top
+  rotate: true
+  xy: 120, 18
+  size: 52, 25
+  orig: 52, 25
+  offset: 0, 0
+  index: -1
+Fin_TopBack
+  rotate: true
+  xy: 38, 2
+  size: 24, 12
+  orig: 24, 12
+  offset: 0, 0
+  index: -1
+Front
+  rotate: false
+  xy: 2, 28
+  size: 51, 42
+  orig: 51, 42
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 3
+  size: 34, 23
+  orig: 34, 23
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: true
+  xy: 55, 5
+  size: 24, 31
+  orig: 24, 31
+  offset: 0, 0
+  index: -1

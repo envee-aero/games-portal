@@ -1,0 +1,118 @@
+{
+    "list": [
+        {
+            "type": "spine",
+            "path": "spines",
+            "assets": [
+                "HTP_MinimalHand",
+                "Heart"
+            ]
+        },
+        {
+            "type": "image",
+            "path": "textures",
+            "assets": [
+                "_Generic_BlackmoonLogo",
+                "Ball",
+                "Ball_Trail",
+                "BG",
+                "BM_Logo",
+                "Bok_Lewy",
+                "Bok_Prawy",
+                "Bouncer",
+                "Bouncer_160",
+                "Bouncer_192",
+                "Btn_Continue",
+                "Btn_Pause",
+                "Btn_Play",
+                "Btn_SoundOff",
+                "Btn_SoundOn",
+                "Cannon_Left",
+                "Cannon_Right",
+                "DebugHelper_1",
+                "GameOverIcon",
+                "GameTitle",
+                "HighscoreBigIcon",
+                "HighscoreIcon",
+                "NeedLandscape",
+                "NeedPortrait",
+                "PauseCurtain",
+                "PauseIcon",
+                "RotateBG",
+                "ScoreIcon",
+                "ScorePanel",
+                "Shot",
+                "Tile_Blue",
+                "Tile_Cracs_0001",
+                "Tile_Cracs_0002",
+                "Tile_Cracs_0003",
+                "Tile_Green",
+                "Tile_Hit",
+                "Tile_Orange",
+                "Tile_Pink",
+                "Tile_Yellow",
+                "TimerIcon",
+                "TryAgain",
+                "UpgradeIcon_ExtraLife",
+                "UpgradeIcon_Shooting",
+                "UpgradeIcon_WiderBouncer",
+                "ViewHelper",
+                "Zarowa",
+                "ZaslonkaFade",
+                "UpgradeIconExtraBall",
+                "Particle_Blue_1",
+                "Particle_Blue_2",
+                "Particle_Blue_3",
+                "Particle_Green_1",
+                "Particle_Green_2",
+                "Particle_Green_3",
+                "Particle_Orange_1",
+                "Particle_Orange_2",
+                "Particle_Orange_3",
+                "Particle_Pink_1",
+                "Particle_Pink_2",
+                "Particle_Pink_3",
+                "Particle_Yellow_1",
+                "Particle_Yellow_2",
+                "Particle_Yellow_3"
+            ]
+        },
+        {
+            "type": "audio",
+            "path": "sounds",
+            "assets": [
+                "music",
+                "tap",
+                "Hit_Brick_4b",
+                "Hit_Brick_4a",
+                "Hit_Brick_3b",
+                "Hit_Brick_3a",
+                "Hit_Brick_2b",
+                "Hit_Brick_2a",
+                "Hit_Brick_1b",
+                "Hit_Brick_1a",
+                "Ball_Hit_Wall_2",
+                "Ball_Hit_Wall_1",
+                "New_Bricks",
+                "Time_Out",
+                "CollectShell"
+            ]
+        },
+        {
+            "type": "font",
+            "path": "fonts",
+            "assets": [
+                "scorefont",
+                "Obelix16",
+                "Obelix28"
+            ]
+        },
+        {
+            "type": "text",
+            "path": "txt",
+            "assets": [
+                "Levels"
+            ]
+        }
+    ]
+}

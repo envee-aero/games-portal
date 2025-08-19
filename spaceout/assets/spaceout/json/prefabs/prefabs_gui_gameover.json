@@ -1,0 +1,152 @@
+{
+    "gameover_btn_play": {
+        "virtual_position": {
+            "x": 0,
+            "y": 300
+        },
+        "sprite": {
+            "texture": "Btn_Play",
+            "layer": "LAYER_GUI_22",
+            "sublayer": 1
+        },
+        "button": {
+            "logicUp": "Clicked",
+            "visInteractions": "basic",
+            "audio": false
+        },
+        "commands": {
+            "Clicked": [
+                {
+                    "name": "DoGotoCover"
+                }
+            ],
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "y": 500,
+                    "d": 400,
+                    "delay": 120
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "y": 600,
+                    "d": 450
+                }
+            ],
+            "Create": [
+                {
+                    "name": "DoVisualMoveHalfSize",
+                    "dirX": 0,
+                    "dirY": -1
+                }
+            ]
+        }
+    },
+    "gameover_icon_try_again": {
+        "virtual_position": {
+            "x": 0,
+            "y": 375
+        },
+        "image": {
+            "texture": "TryAgain",
+            "layer": "LAYER_GUI_21",
+            "sublayer": 2
+        },
+        "commands": {
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "y": -850,
+                    "d": 400,
+                    "delay": 120
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "y": -600,
+                    "d": 450
+                }
+            ]
+        }
+    },
+    "gameover_icon_panel": {
+        "virtual_position": {
+            "x": 0,
+            "y": 375
+        },
+        "image": {
+            "texture": "GameOverPanel",
+            "layer": "LAYER_GUI_21",
+            "sublayer": 2
+        },
+        "commands": {
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "y": -850,
+                    "d": 400,
+                    "delay": 120
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "y": -600,
+                    "d": 450
+                }
+            ]
+        }
+    },
+    "gameover_icon_highscore": {
+        "virtual_position": {
+            "x": 50,
+            "y": 115
+        },
+        "image": {
+            "texture": "HighscoreIcon",
+            "layer": "LAYER_GUI_11",
+            "sublayer": 2
+        },
+        "commands": {
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "x": -100,
+                    "d": 400,
+                    "delay": 120
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "x": -100,
+                    "d": 450
+                }
+            ]
+        }
+    },
+    "gameover_tap": {
+        "virtual_position": {
+            "x": 0,
+            "y": 0
+        },
+        "spine": {
+            "asset": "HTP_MinimalHand",
+            "layer": "LAYER_GUI_21",
+            "sublayer": 1,
+            "curAnimation": "Tap",
+            "animations": {
+                "Empty": {
+                    "loops": true
+                }
+            }
+        },
+        "bags": {
+            "list": []
+        },
+        "commands": {}
+    }
+}

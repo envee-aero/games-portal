@@ -1,0 +1,62 @@
+
+Fish06.png
+size: 739,85
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Fin01
+  rotate: true
+  xy: 664, 26
+  size: 57, 31
+  orig: 57, 31
+  offset: 0, 0
+  index: -1
+Fin02
+  rotate: true
+  xy: 697, 27
+  size: 56, 40
+  orig: 56, 40
+  offset: 0, 0
+  index: -1
+Fin03
+  rotate: false
+  xy: 627, 5
+  size: 37, 14
+  orig: 37, 14
+  offset: 0, 0
+  index: -1
+MiddleFin
+  rotate: false
+  xy: 527, 3
+  size: 54, 16
+  orig: 55, 16
+  offset: 1, 0
+  index: -1
+Tail
+  rotate: true
+  xy: 527, 21
+  size: 62, 135
+  orig: 62, 135
+  offset: 0, 0
+  index: -1
+TopFin
+  rotate: false
+  xy: 2, 2
+  size: 155, 81
+  orig: 155, 81
+  offset: 0, 0
+  index: -1
+TopSmallFin
+  rotate: false
+  xy: 583, 4
+  size: 42, 15
+  orig: 42, 15
+  offset: 0, 0
+  index: -1
+Torso
+  rotate: false
+  xy: 159, 3
+  size: 366, 80
+  orig: 366, 80
+  offset: 0, 0
+  index: -1

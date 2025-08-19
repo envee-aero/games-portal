@@ -1,0 +1,13 @@
+
+Hit.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Elements/Hit
+  rotate: false
+  xy: 2, 2
+  size: 144, 137
+  orig: 144, 137
+  offset: 0, 0
+  index: -1

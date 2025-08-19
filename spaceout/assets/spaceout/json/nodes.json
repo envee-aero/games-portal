@@ -1,0 +1,122 @@
+{
+    "node_cover": [
+        "cover_blackmoon_logo",
+        "cover_title",
+        "cover_score_panel",
+        "cover_btn_play"
+    ],
+    "node_gameplay_passive": [
+        "gameplay_background",
+        {
+            "prefab": "gameplay_wall_right",
+            "times": 2,
+            "post": [
+                {
+                    "name": "DoSetPosition",
+                    "x": 310
+                },
+                {
+                    "name": "DoVisualMoveBySizeMultiplied",
+                    "dirX": 0.5,
+                    "dirY": {
+                        "_iteratorMultiplier": 1
+                    }
+                }
+            ]
+        },
+        {
+            "prefab": "gameplay_wall_left",
+            "times": 2,
+            "post": [
+                {
+                    "name": "DoSetPosition",
+                    "x": -310
+                },
+                {
+                    "name": "DoVisualMoveBySizeMultiplied",
+                    "dirX": -0.5,
+                    "dirY": {
+                        "_iteratorMultiplier": 1
+                    }
+                }
+            ]
+        },
+        {
+            "prefab": "wall_collider",
+            "post": [
+                {
+                    "name": "DoSetPosition",
+                    "x": 0,
+                    "y": -45
+                },
+                {
+                    "name": "DoVisualResize",
+                    "width": 2000,
+                    "height": 100
+                },
+                {
+                    "name": "DoSynchronizeBodyWithVisual"
+                }
+            ]
+        },
+        {
+            "prefab": "wall_collider",
+            "post": [
+                {
+                    "name": "DoSetPosition",
+                    "x": -370,
+                    "y": 520
+                },
+                {
+                    "name": "DoVisualResize",
+                    "width": 100,
+                    "height": 2000
+                },
+                {
+                    "name": "DoSynchronizeBodyWithVisual"
+                }
+            ]
+        },
+        {
+            "prefab": "wall_collider",
+            "post": [
+                {
+                    "name": "DoSetPosition",
+                    "x": 370,
+                    "y": 520
+                },
+                {
+                    "name": "DoVisualResize",
+                    "width": 100,
+                    "height": 2000
+                },
+                {
+                    "name": "DoSynchronizeBodyWithVisual"
+                }
+            ]
+        }
+    ],
+    "node_gameplay_active": [
+        "gameplay_score_panel",
+        "gameplay_btn_pause"
+    ],
+    "node_gameover": [
+        "gameover_btn_play",
+        "gameover_icon_try_again"
+    ],
+    "node_pause": [
+        "pause_overlay",
+        "pause_icon",
+        "pause_btn_resume"
+    ],
+    "node_fade": [
+        "fade_overlay"
+    ],
+    "node_rotate_your_device": [
+        "rotate_your_device_overlay",
+        "rotate_your_device_icon"
+    ],
+    "node_audio_controller": [
+        "audio_controller_btn_audio"
+    ]
+}

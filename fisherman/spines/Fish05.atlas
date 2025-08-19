@@ -1,0 +1,41 @@
+
+Fish05.png
+size: 241,47
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BottomFin
+  rotate: false
+  xy: 224, 30
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 177, 11
+  size: 34, 45
+  orig: 34, 45
+  offset: 0, 0
+  index: -1
+MiddleFin
+  rotate: true
+  xy: 224, 12
+  size: 16, 8
+  orig: 16, 8
+  offset: 0, 0
+  index: -1
+TopFin
+  rotate: true
+  xy: 224, 3
+  size: 7, 14
+  orig: 7, 14
+  offset: 0, 0
+  index: -1
+Torso
+  rotate: false
+  xy: 2, 2
+  size: 173, 43
+  orig: 173, 43
+  offset: 0, 0
+  index: -1

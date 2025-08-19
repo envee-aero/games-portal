@@ -1,0 +1,99 @@
+{
+    "manifest": {
+        "filePurpose": "GameManifest"
+    },
+    "assets": [
+        {
+            "path": "fonts",
+            "type": "font",
+            "files": [
+                "scorefont"
+            ]
+        },
+        {
+            "path": "spines",
+            "type": "spine",
+            "files": [
+                "HTP_MinimalHand"
+            ]
+        },
+        {
+            "path": "textures",
+            "type": "png",
+            "files": [
+                "_Generic_BlackmoonLogo",
+                "BG_Bottom_SolidColor",
+                "BG",
+                "BG_Bottom",
+                "BG_Cloud",
+                "BG_Sky",
+                "BM_Logo",
+                "Btn_Continue",
+                "Btn_Pause",
+                "Btn_Play",
+                "Btn_SoundOff",
+                "Btn_SoundOn",
+                "DebugHelper_1",
+                "GameOverPanel",
+                "GameTitle",
+                "Hamster_01",
+                "Hamster_01_Blocked",
+                "Hamster_02",
+                "Hamster_02_Blocked",
+                "Hamster_03",
+                "Hamster_03_Blocked",
+                "Hamster_04",
+                "Hamster_04_Blocked",
+                "Hamster_05",
+                "Hamster_05_Blocked",
+                "Hamster_06",
+                "Hamster_06_Blocked",
+                "Hamster_07",
+                "Hamster_07_Blocked",
+                "Hamster_08",
+                "Hamster_08_Blocked",
+                "Hamster_09",
+                "Hamster_09_Blocked",
+                "Hamster_10",
+                "Hamster_10_Blocked",
+                "HighscoreBigIcon",
+                "HighscoreIcon",
+                "NeedLandscape",
+                "NeedPortrait",
+                "PauseCurtain",
+                "PauseIcon",
+                "RotateBG",
+                "ScoreIcon",
+                "ScorePanel",
+                "TimerIcon",
+                "TryAgain",
+                "TutorialExplanationPanel",
+                "UI_PasekNaChomiki_7sztuk",
+                "ViewHelper",
+                "Zarowa",
+                "ZaslonkaFade"
+            ]
+        },
+        {
+            "path": "audio",
+            "type": "audio",
+            "files": [
+                "GameMusic",
+                "tap",
+                "select_tile_03",
+                "select_tile_02",
+                "match_4",
+                "match_3",
+                "match_2",
+                "match_1"
+            ]
+        },
+        {
+            "path": "txt",
+            "type": "text",
+            "files": [
+                "Levels"
+            ]
+        }
+    ]
+}

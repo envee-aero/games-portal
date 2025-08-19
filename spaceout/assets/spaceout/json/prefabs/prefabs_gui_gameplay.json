@@ -1,0 +1,148 @@
+{
+    "gameplay_score_panel": {
+        "image": {
+            "texture": "ScorePanel",
+            "layer": "LAYER_GUI_11",
+            "sublayer": 2
+        },
+        "commands": {
+            "Create": [
+                {
+                    "name": "DoVisualMoveHalfSize",
+                    "dirX": 1,
+                    "dirY": 1
+                }
+            ],
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "y": -350,
+                    "d": 400,
+                    "delay": 30
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "y": -600,
+                    "d": 450
+                }
+            ]
+        },
+        "system_pin": {
+            "list": [
+                {
+                    "prefab": "gameplay_score_text",
+                    "x": -100,
+                    "y": -29
+                },
+                {
+                    "prefab": "gameplay_score_icon",
+                    "x": -135,
+                    "y": 0
+                }
+            ]
+        }
+    },
+    "gameplay_score_text": {
+        "virtual_position": {
+            "x": 0,
+            "y": 0
+        },
+        "alias": {
+            "alias": "gameplay_score_text"
+        },
+        "bitmap_text": {
+            "texture": "scorefont",
+            "layer": "LAYER_GUI_11",
+            "text": "000000",
+            "sublayer": 2,
+            "scale": 0.98
+        },
+        "commands": {}
+    },
+    "gameplay_score_icon": {
+        "virtual_position": {
+            "x": 0,
+            "y": 0
+        },
+        "image": {
+            "texture": "ScoreIcon",
+            "layer": "LAYER_GUI_11",
+            "sublayer": 2
+        },
+        "commands": {}
+    },
+    "gameplay_btn_pause": {
+        "virtual_position": {
+            "x": -5,
+            "y": 80
+        },
+        "sprite": {
+            "texture": "Btn_Pause",
+            "layer": "LAYER_GUI_31",
+            "sublayer": 1
+        },
+        "button": {
+            "logicUp": "Clicked",
+            "visInteractions": "basic",
+            "audio": false
+        },
+        "alias": {
+            "alias": "gameplay_btn_pause"
+        },
+        "commands": {
+            "Clicked": [
+                {
+                    "name": "DoPause"
+                }
+            ],
+            "NodeEnter": [
+                {
+                    "name": "DoTweenPositionByDeltaFrom",
+                    "x": 250,
+                    "d": 250,
+                    "delay": 180
+                }
+            ],
+            "NodeExit": [
+                {
+                    "name": "DoTweenPositionByDeltaTo",
+                    "x": 300,
+                    "d": 450
+                }
+            ],
+            "Create": [
+                {
+                    "name": "DoVisualMoveHalfSize",
+                    "dirX": -1,
+                    "dirY": 1
+                }
+            ]
+        }
+    },
+    "gameplay_tutorial_hand": {
+        "virtual_position": {
+            "x": 0,
+            "y": 700
+        },
+        "alias": {
+            "alias": "gameplay_tutorial_hand"
+        },
+        "spine": {
+            "asset": "HTP_MinimalHand",
+            "layer": "LAYER_GAMEPLAY_11",
+            "debug": false,
+            "sublayer": 15,
+            "curAnimation": "Hold",
+            "animations": {
+                "Hold": {
+                    "loops": true
+                }
+            }
+        },
+        "commands": {
+            "Create": []
+        }
+    }
+}

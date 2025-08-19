@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Antonio';
+    src: url('antonio-bold-webfont.eot');
+    src: url('antonio-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('antonio-bold-webfont.woff2') format('woff2'),
+         url('antonio-bold-webfont.woff') format('woff'),
+         url('antonio-bold-webfont.ttf') format('truetype'),
+         url('antonio-bold-webfont.svg#antoniobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

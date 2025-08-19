@@ -1,0 +1,11 @@
+{
+    "audio": {
+        "music": {
+            "volume": 0.3,
+            "loop": true
+        },
+        "tap": {
+            "volume": 1
+        }
+    }
+}

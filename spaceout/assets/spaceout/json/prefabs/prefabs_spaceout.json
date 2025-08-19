@@ -1,0 +1,300 @@
+{
+    "gameplay_background": {
+        "image": {
+            "texture": "BG"
+        },
+        "commands": {
+            "Create": [
+                {
+                    "name": "DoVisualMoveHalfSize",
+                    "dirY": 1
+                }
+            ]
+        }
+    },
+    "gameplay_wall_left": {
+        "image": {
+            "texture": "Bok_Lewy"
+        },
+        "commands": {}
+    },
+    "gameplay_wall_right": {
+        "image": {
+            "texture": "Bok_Prawy"
+        },
+        "commands": {}
+    },
+    "wall_collider": {
+        "image": {
+            "texture": "DebugHelper_1",
+            "visible": false
+        },
+        "physics": {
+            "static": true
+        },
+        "physics_groups": {
+            "list": [
+                "WALL"
+            ]
+        }
+    },
+    "ball": {
+        "data": {
+            "active": false,
+            "sinceTrail": {
+                "cur": 0,
+                "max": 0.2
+            }
+        },
+        "image": {
+            "texture": "Ball",
+            "sublayer": 5
+        },
+        "bags": {
+            "list": [
+                "BALLS"
+            ]
+        },
+        "physics": {},
+        "physics_groups": {
+            "list": [
+                "BALLS"
+            ]
+        }
+    },
+    "brick": {
+        "data": {
+            "lives": 1,
+            "texture_at_life_1": "Tile_Blue",
+            "texture_at_life_2": "Tile_Green",
+            "texture_at_life_3": "Tile_Yellow",
+            "texture_at_life_4": "Tile_Orange",
+            "texture_at_life_5": "Tile_Pink"
+        },
+        "image": {
+            "texture": "Tile_Blue",
+            "sublayer": 1
+        },
+        "bags": {
+            "list": [
+                "BRICKS"
+            ]
+        },
+        "physics": {
+            "static": true
+        },
+        "physics_groups": {
+            "list": [
+                "BRICKS"
+            ]
+        },
+        "commands": {}
+    },
+    "paddle": {
+        "data": {},
+        "image": {
+            "texture": "Bouncer",
+            "sublayer": 2
+        },
+        "rex_move_to": {
+            "speed": 2000,
+            "rotateToTarget": false
+        },
+        "system_input_movement": {
+            "flagProcessTowardPointer": true,
+            "flagProcessPointerConstantly": true,
+            "flagStopMovementWithoutAnyInput": false,
+            "flagInstantMove": true,
+            "boundsAxisX": {
+                "min": -255,
+                "max": 255
+            },
+            "boundsAxisY": {
+                "min": 900,
+                "max": 900
+            }
+        },
+        "bags": {
+            "list": [
+                "PADDLE"
+            ]
+        },
+        "alias": {
+            "alias": "player"
+        },
+        "physics": {
+            "static": false
+        },
+        "physics_groups": {
+            "list": [
+                "PADDLE"
+            ]
+        },
+        "commands": {},
+        "system_pin": {
+            "list": [
+                {
+                    "prefab": "paddle_cannon_right",
+                    "x": 72,
+                    "y": -5
+                },
+                {
+                    "prefab": "paddle_cannon_left",
+                    "x": -72,
+                    "y": -5
+                }
+            ]
+        }
+    },
+    "paddle_cannon_right": {
+        "image": {
+            "texture": "Cannon_Right",
+            "sublayer": 5,
+            "angle": -90
+        },
+        "bags": {
+            "list": []
+        },
+        "system_shoot_projectile": {
+            "bulletCount": 1,
+            "intervalMax": [
+                300
+            ],
+            "bulletPrefab": "prefab_bullet_cannon",
+            "offsetX": 20,
+            "offsetY": 0,
+            "offsetSpreadScale": 2,
+            "angleMultiplier": 2,
+            "reduceIteratorBy": 1
+        },
+        "commands": {}
+    },
+    "paddle_cannon_left": {
+        "image": {
+            "texture": "Cannon_Left",
+            "sublayer": 5,
+            "angle": -90
+        },
+        "bags": {
+            "list": []
+        },
+        "commands": {},
+        "system_shoot_projectile": {
+            "bulletCount": 1,
+            "intervalMax": [
+                300
+            ],
+            "bulletPrefab": "prefab_bullet_cannon",
+            "offsetX": 20,
+            "offsetY": 0,
+            "offsetSpreadScale": 2,
+            "angleMultiplier": 2,
+            "reduceIteratorBy": 1
+        }
+    },
+    "prefab_bullet_cannon": {
+        "data": {},
+        "image": {
+            "texture": "Shot",
+            "layer": "LAYER_GAMEPLAY_11",
+            "sublayer": 10
+        },
+        "rex_bullet": {
+            "speed": 700,
+            "rotateToTarget": false
+        },
+        "physics": {
+            "type": "circle",
+            "radius": 10
+        },
+        "physics_groups": {
+            "list": [
+                "BULLET"
+            ]
+        },
+        "commands": {},
+        "system_offscreen_die": {}
+    },
+    "upgrade_extra_balls": {
+        "data": {
+            "type": "balls"
+        },
+        "image": {
+            "texture": "UpgradeIconExtraBall",
+            "sublayer": 4
+        },
+        "bags": {
+            "list": [
+                "UPGRADES_BALLS",
+                "UPGRADES"
+            ]
+        },
+        "rex_move_to": {},
+        "physics": {
+            "static": false
+        },
+        "physics_groups": {
+            "list": [
+                "UPGRADES"
+            ]
+        },
+        "system_offscreen_die": {},
+        "commands": {}
+    },
+    "upgrade_cannons": {
+        "data": {
+            "type": "cannons"
+        },
+        "image": {
+            "texture": "UpgradeIcon_Shooting",
+            "sublayer": 4
+        },
+        "bags": {
+            "list": [
+                "UPGRADES_CANNONS",
+                "UPGRADES"
+            ]
+        },
+        "rex_move_to": {},
+        "physics": {
+            "static": false
+        },
+        "physics_groups": {
+            "list": [
+                "UPGRADES"
+            ]
+        },
+        "system_offscreen_die": {},
+        "commands": {}
+    },
+    "prefab_particle": {
+        "particle_emitter": {
+            "texture": "Ball",
+            "layer": "LAYER_GAMEPLAY_11",
+            "sublayer": 20,
+            "config": {
+                "speed": {
+                    "min": -600,
+                    "max": 600
+                },
+                "angle": {
+                    "min": 0,
+                    "max": 360
+                },
+                "scale": {
+                    "start": 0.5,
+                    "end": 0
+                },
+                "rotate": {
+                    "min": -180,
+                    "max": 180
+                },
+                "maxVelocityX": 10000,
+                "maxVelocityY": 10000,
+                "lifespan": 200,
+                "frequency": 20
+            }
+        },
+        "commands": {}
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "meta": {
+        "version": 0
+    },
+    "files": [
+        {
+            "enginetype": "prefabs",
+            "filetype": "json",
+            "path": "json/prefabs",
+            "filename": "prefabs_gui_cover"
+        },
+        {
+            "enginetype": "prefabs",
+            "filetype": "json",
+            "path": "json/prefabs",
+            "filename": "prefabs_gui_gameover"
+        },
+        {
+            "enginetype": "prefabs",
+            "filetype": "json",
+            "path": "json/prefabs",
+            "filename": "prefabs_gui_gameplay"
+        },
+        {
+            "enginetype": "prefabs",
+            "filetype": "json",
+            "path": "json/prefabs/common",
+            "filename": "prefabs_gui_fade"
+        },
+        {
+            "enginetype": "prefabs",
+            "filetype": "json",
+            "path": "json/prefabs/common",
+            "filename": "prefabs_gui_pause"
+        },
+        {
+            "enginetype": "prefabs",
+            "filetype": "json",
+            "path": "json/prefabs/common",
+            "filename": "prefabs_gui_rotate_device"
+        },
+        {
+            "enginetype": "prefabs",
+            "filetype": "json",
+            "path": "json/prefabs/common",
+            "filename": "prefabs_gui_audio_controller"
+        },
+        {
+            "enginetype": "prefabs",
+            "filetype": "json",
+            "path": "json/prefabs",
+            "filename": "prefabs_spaceout"
+        },
+        {
+            "enginetype": "assets",
+            "filetype": "json",
+            "path": "json",
+            "filename": "assets"
+        },
+        {
+            "enginetype": "gameconfig",
+            "filetype": "json",
+            "path": "json",
+            "filename": "gameconfig"
+        },
+        {
+            "enginetype": "nodes",
+            "filetype": "json",
+            "path": "json",
+            "filename": "nodes"
+        }
+    ]
+}

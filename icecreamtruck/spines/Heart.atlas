@@ -1,0 +1,27 @@
+
+Heart.png
+size: 112,45
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FullHeart
+  rotate: false
+  xy: 2, 2
+  size: 45, 41
+  orig: 45, 41
+  offset: 0, 0
+  index: -1
+LeftSide
+  rotate: false
+  xy: 80, 5
+  size: 30, 38
+  orig: 30, 38
+  offset: 0, 0
+  index: -1
+RightSide
+  rotate: false
+  xy: 49, 3
+  size: 29, 40
+  orig: 29, 40
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+
+HTP_MinimalHand.png
+size: 607,156
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Hand
+  rotate: false
+  xy: 279, 2
+  size: 190, 152
+  orig: 190, 152
+  offset: 0, 0
+  index: -1
+Keyboard
+  rotate: false
+  xy: 2, 5
+  size: 275, 149
+  orig: 279, 154
+  offset: 0, 5
+  index: -1
+TapEffect
+  rotate: false
+  xy: 471, 14
+  size: 134, 140
+  orig: 134, 140
+  offset: 0, 0
+  index: -1

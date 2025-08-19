@@ -1,0 +1,11 @@
+{
+	"name": "6 Pockets",
+	"short_name": "6 Pockets",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#fcbf3c",
+	"icons": [],
+	"theme_color": "#fcbf3c"
+}

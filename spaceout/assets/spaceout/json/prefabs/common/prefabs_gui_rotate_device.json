@@ -1,0 +1,34 @@
+{
+    "rotate_your_device_overlay": {
+        "virtual_position": {
+            "x": 0,
+            "y": 0
+        },
+        "image": {
+            "texture": "RotateBG",
+            "layer": "LAYER_ROTATION_SCREEN_22",
+            "sublayer": 100
+        },
+        "commands": {
+            "Create": [
+                {
+                    "name": "DoVisualResize",
+                    "width": 4096,
+                    "height": 4096
+                }
+            ]
+        }
+    },
+    "rotate_your_device_icon": {
+        "virtual_position": {
+            "x": 0,
+            "y": 0
+        },
+        "image": {
+            "texture": "NeedPortrait",
+            "layer": "LAYER_ROTATION_SCREEN_22",
+            "sublayer": 101
+        },
+        "commands": {}
+    }
+}

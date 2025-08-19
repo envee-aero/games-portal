@@ -1,0 +1,117 @@
+{
+    "manifest": {
+        "filePurpose": "GameManifest"
+    },
+    "assets": [
+        {
+            "path": "fonts",
+            "type": "font",
+            "files": [
+                "scorefont"
+            ]
+        },
+        {
+            "path": "spines",
+            "type": "spine",
+            "files": [
+                "HTP_MinimalHand",
+                "Heart",
+                "IceCream",
+                "Kids"
+            ]
+        },
+        {
+            "path": "textures",
+            "type": "png",
+            "files": [
+                "_Generic_BlackmoonLogo",
+                "BG",
+                "BM_Logo",
+                "Btn_Continue",
+                "Btn_Pause",
+                "Btn_Play",
+                "Btn_SoundOff",
+                "Btn_SoundOn",
+                "Coin",
+                "Cover_IceCreamTruck",
+                "DebugHelper_1",
+                "DymekKomiksowy",
+                "GameOverPanel",
+                "GameTitle",
+                "HighscoreBigIcon",
+                "HighscoreIcon",
+                "Illustration",
+                "Kulka_1-1",
+                "Kulka_1-2",
+                "Kulka_1-3",
+                "Kulka_2-1",
+                "Kulka_2-2",
+                "Kulka_2-3",
+                "Kulka_3-1",
+                "Kulka_3-2",
+                "Kulka_3-3",
+                "Kulka_4-1",
+                "Kulka_4-2",
+                "Kulka_4-3",
+                "Kulka_5-1",
+                "Kulka_5-2",
+                "Kulka_5-3",
+                "Kulka_6-1",
+                "Kulka_6-2",
+                "Kulka_6-3",
+                "Kulka_7-1",
+                "Kulka_7-2",
+                "Kulka_7-3",
+                "Kulka_8-1",
+                "Kulka_8-2",
+                "Kulka_8-3",
+                "Kulka_9-1",
+                "Kulka_9-2",
+                "Kulka_9-3",
+                "Lada",
+                "NeedLandscape",
+                "NeedPortrait",
+                "PauseCurtain",
+                "PauseIcon",
+                "RotateBG",
+                "ScoreIcon",
+                "Podstawka_Przod",
+                "Wafel",
+                "ScorePanel",
+                "SmallerPanelZKulkami",
+                "TimerIcon",
+                "TryAgain",
+                "MalyDymek",
+                "ViewHelper",
+                "Zarowa",
+                "ZaslonkaFade",
+                "EnergyBar_Base",
+                "EnergyBar_Fill",
+                "EnergyBar_Icon"
+            ]
+        },
+        {
+            "path": "audio",
+            "type": "audio",
+            "files": [
+                "GameMusic",
+                "tap",
+                "ice_cream_scoop_1",
+                "ice_cream_scoop_2",
+                "ice_cream_scoop_multi_1",
+                "ice_cream_scoop_multi_2",
+                "collect_coin_1",
+                "collect_coin_2",
+                "collect_coin_3",
+                "collect_coin_4",
+                "kid_big_joy_1",
+                "kid_big_joy_2",
+                "kid_big_joy_3",
+                "kid_joy_1",
+                "kid_joy_2",
+                "kid_moderate_joy_1",
+                "kid_moderate_joy_2"
+            ]
+        }
+    ]
+}
