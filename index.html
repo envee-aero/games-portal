@@ -60,16 +60,18 @@
           const ul = document.createElement('ul');
           ul.className = 'grid';
 
-          games.forEach(game => {
-            // Use slug from games.json to create the link
-            const href = game.slug ? `${game.slug}/` : (game.folder ? `${game.folder}/` : null);
-            if (!href) return; // skip if link info missing
+games.forEach(game => {
+  // Build /<Category>/<slug>/
+  const categoryPath = encodeURIComponent(category);     // e.g., "Action%20%26%20Arcade"
+  const gamePath = encodeURIComponent(game.slug);        // e.g., "blackjack"
+  const href = `${categoryPath}/${gamePath}/`;
 
-            const li = document.createElement('li');
-            li.dataset.name = game.name.toLowerCase();
-            li.innerHTML = `<a href="${href}">${game.name}</a>`;
-            ul.appendChild(li);
-          });
+  const li = document.createElement('li');
+  li.dataset.name = game.name.toLowerCase();
+  li.innerHTML = `<a href="${href}">${game.name}</a>`;
+  ul.appendChild(li);
+});
+
 
           section.appendChild(ul);
           container.appendChild(section);
