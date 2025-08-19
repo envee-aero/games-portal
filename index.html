@@ -5,7 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Games Portal</title>
   <style>
-    /* same styling as before */
+    :root { --max: 1000px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; }
+    header, footer { max-width: var(--max); margin: 0 auto; padding: 20px 24px; }
+    header { border-bottom: 1px solid #eee; }
+    h1 { margin: 0 0 8px 0; font-size: 28px; }
+    p { margin: 0 0 14px 0; color: #333; }
+    .search input { width: 100%; max-width: 420px; padding: 10px 12px; font-size: 14px; }
+    main { max-width: var(--max); margin: 0 auto; padding: 20px 24px; }
+    h2 { margin: 28px 0 12px; font-size: 22px; }
+    ul.grid { list-style: none; padding: 0; margin: 0 0 6px 0;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+    ul.grid li { border: 1px solid #ddd; border-radius: 8px; padding: 12px; background: #fafafa; }
+    ul.grid li a { text-decoration: none; color: #222; }
+    ul.grid li:hover { background: #f2f2f2; }
+    .hidden { display: none !important; }
   </style>
 </head>
 <body>
@@ -18,47 +32,79 @@
   </header>
 
   <main>
-    <!-- This will be populated dynamically -->
-    <div id="game-sections"></div>
+    <div id="game-sections" aria-live="polite"></div>
   </main>
 
   <footer>
-    &copy; 2025 Games Portal
+    © 2025 Games Portal
   </footer>
 
   <script>
     async function loadGames() {
-      const response = await fetch('games.json');
-      const data = await response.json();
+      try {
+        const res = await fetch('games.json', { cache: 'no-store' });
+        const data = await res.json();
 
-      const container = document.getElementById('game-sections');
-      container.innerHTML = '';
+        const container = document.getElementById('game-sections');
+        container.innerHTML = '';
 
-      for (const [genre, games] of Object.entries(data)) {
-        const h2 = document.createElement('h2');
-        h2.textContent = genre;
-        container.appendChild(h2);
+        // Build a section for each category (the JSON object keys)
+        Object.entries(data).forEach(([category, games]) => {
+          const section = document.createElement('section');
+          section.className = 'category-section';
 
-        const ul = document.createElement('ul');
-        ul.className = 'grid';
+          const h2 = document.createElement('h2');
+          h2.textContent = category;
+          section.appendChild(h2);
 
-games.forEach(game => {
-  const li = document.createElement('li');
-  li.innerHTML = `<a href="${game.slug}/">${game.name}</a>`;
-  ul.appendChild(li);
-});
+          const ul = document.createElement('ul');
+          ul.className = 'grid';
 
-        container.appendChild(ul);
+          games.forEach(game => {
+            // Use slug from games.json to create the link
+            const href = game.slug ? `${game.slug}/` : (game.folder ? `${game.folder}/` : null);
+            if (!href) return; // skip if link info missing
+
+            const li = document.createElement('li');
+            li.dataset.name = game.name.toLowerCase();
+            li.innerHTML = `<a href="${href}">${game.name}</a>`;
+            ul.appendChild(li);
+          });
+
+          section.appendChild(ul);
+          container.appendChild(section);
+        });
+
+        attachSearch();
+      } catch (e) {
+        document.getElementById('game-sections').textContent =
+          'Failed to load games.json. Make sure it is in the same folder as index.html.';
+        console.error(e);
       }
     }
 
-    // search filter
-    document.getElementById('search').addEventListener('input', function () {
-      const query = this.value.toLowerCase();
-      document.querySelectorAll('ul.grid li').forEach(li => {
-        li.style.display = li.textContent.toLowerCase().includes(query) ? '' : 'none';
+    function attachSearch() {
+      const input = document.getElementById('search');
+      const sections = Array.from(document.querySelectorAll('.category-section'));
+
+      input.addEventListener('input', function () {
+        const q = this.value.toLowerCase();
+
+        sections.forEach(section => {
+          const items = Array.from(section.querySelectorAll('ul.grid li'));
+          let visibleCount = 0;
+
+          items.forEach(li => {
+            const match = li.dataset.name.includes(q);
+            li.classList.toggle('hidden', !match);
+            if (match) visibleCount++;
+          });
+
+          // Hide entire category if none of its items match the search
+          section.classList.toggle('hidden', visibleCount === 0);
+        });
       });
-    });
+    }
 
     loadGames();
   </script>
