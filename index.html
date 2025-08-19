@@ -42,11 +42,11 @@
         const ul = document.createElement('ul');
         ul.className = 'grid';
 
-        games.forEach(game => {
-          const li = document.createElement('li');
-          li.innerHTML = `<a href="${game.folder}">${game.name}</a>`;
-          ul.appendChild(li);
-        });
+games.forEach(game => {
+  const li = document.createElement('li');
+  li.innerHTML = `<a href="${game.slug}/">${game.name}</a>`;
+  ul.appendChild(li);
+});
 
         container.appendChild(ul);
       }
