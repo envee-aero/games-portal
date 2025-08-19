@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Games Portal</title>
+  <style>
+    :root { --max: 1100px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; }
+    header { padding: 28px 16px; border-bottom: 1px solid #eee; }
+    main { max-width: var(--max); margin: 0 auto; padding: 20px 16px 48px; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    p { margin: 0; color: #555; }
+    .search { margin: 20px 0 24px; }
+    .search input { width: 100%; max-width: 460px; padding: 10px 12px; font-size: 16px; border: 1px solid #ddd; border-radius: 8px; }
+    ul.grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    ul.grid li a { display: block; padding: 12px 14px; text-decoration: none; border: 1px solid #eee; border-radius: 12px; }
+    ul.grid li a:hover { background: #fafafa; }
+    footer { max-width: var(--max); margin: 28px auto 40px; padding: 0 16px; color: #777; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Games Portal</h1>
+    <p>Select a game below. Each link opens the folder’s <code>index.html</code>.</p>
+  </header>
+  <main>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search games…" aria-label="Search games" />
+    </div>
+    <ul id="list" class="grid">
+      <li><a href="6pockets/">6pockets</a></li>
+      <li><a href="alleycats/">alleycats</a></li>
+      <li><a href="animalstacking/">animalstacking</a></li>
+      <li><a href="basketballmaster2/">basketballmaster2</a></li>
+      <li><a href="blackjack/">blackjack</a></li>
+      <li><a href="catspranks/">catspranks</a></li>
+      <li><a href="caveman/">caveman</a></li>
+      <li><a href="checkers/">checkers</a></li>
+      <li><a href="cookinghippos/">cookinghippos</a></li>
+      <li><a href="crincident/">crincident</a></li>
+      <li><a href="doonies/">doonies</a></li>
+      <li><a href="fairy/">fairy</a></li>
+      <li><a href="fisherman/">fisherman</a></li>
+      <li><a href="flyingschool/">flyingschool</a></li>
+      <li><a href="foodtruck/">foodtruck</a></li>
+      <li><a href="footballmaster/">footballmaster</a></li>
+      <li><a href="fruityswipes/">fruityswipes</a></li>
+      <li><a href="furiousracing/">furiousracing</a></li>
+      <li><a href="goblinflyingmachine/">goblinflyingmachine</a></li>
+      <li><a href="greedygnomes/">greedygnomes</a></li>
+      <li><a href="hamsterpop/">hamsterpop</a></li>
+      <li><a href="honeysnap/">honeysnap</a></li>
+      <li><a href="hungrypiggies/">hungrypiggies</a></li>
+      <li><a href="icecreamtruck/">icecreamtruck</a></li>
+      <li><a href="jellyland/">jellyland</a></li>
+      <li><a href="junglerun/">junglerun</a></li>
+      <li><a href="kitekittens/">kitekittens</a></li>
+      <li><a href="minigolf/">minigolf</a></li>
+      <li><a href="monkeypilot/">monkeypilot</a></li>
+      <li><a href="monsteroid/">monsteroid</a></li>
+      <li><a href="noproblamas/">noproblamas</a></li>
+      <li><a href="pandajump/">pandajump</a></li>
+      <li><a href="planetdefense/">planetdefense</a></li>
+      <li><a href="pumpkinshmasher/">pumpkinshmasher</a></li>
+      <li><a href="rampamdunk/">rampamdunk</a></li>
+      <li><a href="rapunzel/">rapunzel</a></li>
+      <li><a href="riddlecubes/">riddlecubes</a></li>
+      <li><a href="sally/">sally</a></li>
+      <li><a href="shapeattack/">shapeattack</a></li>
+      <li><a href="spacecowboy/">spacecowboy</a></li>
+      <li><a href="spaceout/">spaceout</a></li>
+      <li><a href="springy/">springy</a></li>
+      <li><a href="swipeart/">swipeart</a></li>
+      <li><a href="twinz/">twinz</a></li>
+      <li><a href="valkyriastones/">valkyriastones</a></li>
+      <li><a href="veggirabbit/">veggirabbit</a></li>
+      <li><a href="wherestom/">wherestom</a></li>
+      <li><a href="wintervacation/">wintervacation</a></li>
+      <li><a href="wunderplanes/">wunderplanes</a></li>
+      <li><a href="zoopinball/">zoopinball</a></li>
+    </ul>
+  </main>
+  <footer>
+    Tip: if a link 404s, ensure that folder contains an <code>index.html</code>.
+  </footer>
+  <script>
+    const q = document.getElementById('q');
+    const list = document.getElementById('list');
+    q.addEventListener('input', () => {
+      const term = q.value.toLowerCase();
+      for (const li of list.children) {
+        const txt = li.textContent.toLowerCase();
+        li.style.display = txt.includes(term) ? '' : 'none';
+      }
+    });
+  </script>
+</body>
+</html>
