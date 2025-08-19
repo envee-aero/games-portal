@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; }
+    h1 { margin-bottom: 8px; }
+    .note { color:#555; margin: 0 0 24px; }
+    .genre { margin: 28px 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 10px; padding: 0; list-style: none; }
+    .card { border: 1px solid #ddd; padding: 12px; border-radius: 8px; }
+    .card a { text-decoration: none; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Game Portal</h1>
+  <p class="note">Choose a genre, then click a game. This page updates itself from <code>games.json</code>.</p>
+  <div id="app">Loading…</div>
+
+  <script>
+    const app = document.getElementById('app');
+
+    function makeSafePath(segment) {
+      // encode spaces and special chars for URLs
+      return encodeURIComponent(segment).replace(/%2F/g, '/');
+    }
+
+    async function init() {
+      try {
+        const res = await fetch('games.json', { cache: 'no-cache' });
+        if (!res.ok) throw new Error('games.json not found');
+        const data = await res.json();
+
+        const container = document.createElement('div');
+
+        Object.keys(data).forEach((genre) => {
+          const section = document.createElement('section');
+          section.className = 'genre';
+
+          const h2 = document.createElement('h2');
+          h2.textContent = genre;
+          section.appendChild(h2);
+
+          const ul = document.createElement('ul');
+          ul.className = 'grid';
+
+          data[genre].forEach(({ name, slug }) => {
+            const li = document.createElement('li');
+            li.className = 'card';
+
+            const genrePath = makeSafePath(genre);   // e.g., "Action%20%26%20Arcade"
+            const gamePath  = makeSafePath(slug);    // e.g., "rampamdunk"
+            const href = `${genrePath}/${gamePath}/index.html`;
+
+            const a = document.createElement('a');
+            a.href = href;
+            a.textContent = name;
+
+            li.appendChild(a);
+            ul.appendChild(li);
+          });
+
+          section.appendChild(ul);
+          container.appendChild(section);
+        });
+
+        app.innerHTML = '';
+        app.appendChild(container);
+      } catch (e) {
+        app.textContent = 'Error loading games. Make sure games.json is in the root and your folder names match the slugs.';
+        console.error(e);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

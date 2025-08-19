@@ -1,0 +1,64 @@
+{
+  "Casino": [
+    {"name": "Blackjack", "slug": "blackjack"}
+  ],
+  "Casual": [
+    {"name": "Cooking Hippos", "slug": "cookinghippos"},
+    {"name": "Food Truck", "slug": "foodtruck"},
+    {"name": "Where's Tom", "slug": "wherestom"},
+    {"name": "Flying School", "slug": "flyingschool"}
+  ],
+  "Board & Strategy": [
+    {"name": "Checkers", "slug": "checkers"},
+    {"name": "Greedy Gnomes", "slug": "greedygnomes"}
+  ],
+  "Puzzle": [
+    {"name": "Alley Cats", "slug": "alleycats"},
+    {"name": "Honey Snap", "slug": "honeysnap"},
+    {"name": "Ice Cream Truck", "slug": "icecreamtruck"},
+    {"name": "Hamster Pop", "slug": "hamsterpop"},
+    {"name": "Fruity Swipes", "slug": "fruityswipes"},
+    {"name": "Winter Vacation", "slug": "wintervacation"},
+    {"name": "Riddle Cubes", "slug": "riddlecubes"},
+    {"name": "Twinz", "slug": "twinz"},
+    {"name": "Veggie Rabbit", "slug": "veggierabbit"},
+    {"name": "Shape Attack", "slug": "shapeattack"},
+    {"name": "Jellyland", "slug": "jellyland"},
+    {"name": "Swipe Art Puzzle", "slug": "swipeart"},
+    {"name": "Valkyria Stones", "slug": "valkyriastones"}
+  ],
+  "Sports": [
+    {"name": "6 Pockets", "slug": "6pockets"},
+    {"name": "Fisherman", "slug": "fisherman"},
+    {"name": "Football Master", "slug": "footballmaster"},
+    {"name": "Furious Racing", "slug": "furiousracing"},
+    {"name": "Basketball Master 2", "slug": "basketballmaster2"},
+    {"name": "Minigolf Kingdom", "slug": "minigolf"}
+  ],
+  "Action & Arcade": [
+    {"name": "RamPamDunk", "slug": "rampamdunk"},
+    {"name": "Panda Jump", "slug": "pandajump"},
+    {"name": "Space Out", "slug": "spaceout"},
+    {"name": "Doonies", "slug": "doonies"},
+    {"name": "Wunder Planes", "slug": "wunderplanes"},
+    {"name": "Cat's Pranks", "slug": "catspranks"},
+    {"name": "Animal Stacking", "slug": "animalstacking"},
+    {"name": "Spring Hedgehog", "slug": "springhedgehog"},
+    {"name": "Hungry Piggies", "slug": "hungrypiggies"},
+    {"name": "No Problamas", "slug": "noproblamas"},
+    {"name": "Kite Kittens", "slug": "kitekittens"},
+    {"name": "Zoo Pinball", "slug": "zoopinball"},
+    {"name": "Goblin Flying Machine", "slug": "goblinflyingmachine"},
+    {"name": "Fairy Princesses", "slug": "fairy"},
+    {"name": "Monkey Pilot", "slug": "monkeypilot"},
+    {"name": "Pumpkin Smasher", "slug": "pumpkinshmasher"},
+    {"name": "Caveman Grru", "slug": "caveman"},
+    {"name": "Rapunzel Tower", "slug": "rapunzel"},
+    {"name": "Jungle Run", "slug": "junglerun"},
+    {"name": "Space Cowboy", "slug": "spacecowboy"},
+    {"name": "Sally's BBQ Joint", "slug": "sallysbbqjoint"},
+    {"name": "Monsteroid", "slug": "monsteroid"},
+    {"name": "Planet Defense", "slug": "planetdefense"},
+    {"name": "Captain Rogers", "slug": "captainrogers"}
+  ]
+}
